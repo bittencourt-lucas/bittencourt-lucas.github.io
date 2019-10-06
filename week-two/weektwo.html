@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucas Bittencourt's CIT 261 Assignments</title>
+        <script src="scripts/weektwo.js"></script>
+    </head>
+    <body>
+        <h1>Week Two</h1>
+        <h2>
+            JavaScript - Loops, Conditional Statements, Functions, Variables,
+            Parameters, Arrays, Associative Arrays
+        </h2>
+        <p>
+            With ES6, JavaScript now has three variable types: var, let, const
+        </p>
+        <li>
+            var works on global scope, function scope, and can be reassigned:
+        </li>
+        <p><button onclick="printMagicNum()">Click me</button></p>
+        <p id="display-magic-num"></p>
+        <li>
+            let works on function scope, block scope, and can be reassigned
+            (also, there's a simple for loop to show how it works):
+        </li>
+        <p><button onclick="rollTwenty()">Click Me</button></p>
+        <p id="display-twenty"></p>
+        <li>
+            const works on function scope, and on block scope (also, I'm using
+            parameters on the function and a conditional statement):
+        </li>
+        <p>
+            <button onclick="chosenPill('blue')">Take the Blue Pill</button>
+            <button onclick="chosenPill('red')">Take the Red Pill</button>
+        </p>
+        <p id="display-choice"></p>
+        <p>
+            JavaScript also has arrays and associative arrays, which are two
+            different things (although very similar)
+        </p>
+        <li>
+            Arrays are sets of information ordered by number, so if I execute a
+            for loop by number, I'll be able to retrieve the data inside of the
+            array.
+        </li>
+        <li>
+            Associative Arrays aren't ordered, the data is retrieved by key
+            string values instead. This type of array is discouraged, in favor
+            of using JavaScript objects.
+        </li>
+        <p><button onclick="interests()">Test Arrays</button></p>
+        <p id="display-array"></p>
+        <p><a href="../index.html">Go back</a></p>
+    </body>
+</html>
