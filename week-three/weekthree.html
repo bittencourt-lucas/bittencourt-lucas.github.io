@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucas Bittencourt's CIT 261 Assignments</title>
+        <script src="scripts/weekthree.js"></script>
+    </head>
+    <body>
+        <h1>Week Three</h1>
+        <h2>
+            JSON Parse
+        </h2>
+        <p>
+            JSON is usually used to send data back and forth on a web server.
+            Since the data received from the web server will usually be a
+            string, it needs to be parsed to a JSON object in order to be
+            correctly used on the back-end.
+        </p>
+        <p>
+            For example, if we use the object {"id":"1",
+            "username":"bittencourt-lucas", "accounttype":"free"} as a sample,
+            we'll get:
+        </p>
+        <p><button onclick="testExample()">Click me</button></p>
+        <div>ID:</div>
+        <p id="example-id"></p>
+        <div>Username:</div>
+        <p id="example-username"></p>
+        <div>Account Type:</div>
+        <p id="example-account-type"></p>
+        <h2>
+            JSON Stringify
+        </h2>
+        <p>
+            There will be moments when a JSON object needs to be parsed back as
+            a string. This can be easily done using the stringify function.
+            We'll use the same example for the previous topic, except this time
+            we'll change the username, the account type, and then stringify it.
+        </p>
+        <p><button onclick="testStringify()">Click me</button></p>
+        <p id="example-stringify"></p>
+        <p><a href="../index.html">Go back</a></p>
+    </body>
+</html>
