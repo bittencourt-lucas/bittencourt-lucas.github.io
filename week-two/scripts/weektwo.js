@@ -28,6 +28,20 @@ var chosenPill = function(color) {
         const message = 'You chose wisely!'
         document.getElementById('display-choice').innerHTML = message
     }
+    // There's also a while loop that requires a conditional stop
+    let number = 0
+    while (number < 3) {
+        console.log('Example of a while loop')
+        console.log(number)
+        number++
+    }
+    // The do/while loop is almost the same as the while loop, except it executes at least once
+    let another_number = 0
+    do {
+        console.log('Example of a do/while loop')
+        console.log(another_number)
+        another_number++
+    } while (another_number < 0)
 }
 
 // An example of array (which will be numbered in index) is the following
