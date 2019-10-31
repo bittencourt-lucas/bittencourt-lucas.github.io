@@ -1,0 +1,9 @@
+.information {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: white;
+  -webkit-transition: width 2s, height 2s, background 2s, color 2s, padding 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 2s, background 2s, color 2s, padding 2s;
+}
