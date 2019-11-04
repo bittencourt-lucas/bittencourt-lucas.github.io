@@ -1,86 +1,156 @@
 .information {
-  width: 300px;
-  height: 50px;
-  text-align: center;
-  color: white;
-  background: white;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background: white;
 }
 
 span {
-  height: 50px;
-  width: 50px;
-  margin-bottom: 150px;
-  background-color: grey;
-  border-radius: 50%;
-  display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 150px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes redRanger {
-  0%   {margin-bottom:150px;}
-  20%  {margin-bottom:0px;background-color: red;}
-  40% {margin-bottom:150px;}
+    0% {
+        margin-bottom: 150px;
+    }
+    20% {
+        margin-bottom: 0px;
+        background-color: red;
+    }
+    40% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Standard syntax */
 @keyframes redRanger {
-  0%   {margin-bottom:150px;}
-  20%  {margin-bottom:0px;background-color: red;}
-  40% {margin-bottom:150px;}
+    0% {
+        margin-bottom: 150px;
+    }
+    20% {
+        margin-bottom: 0px;
+        background-color: red;
+    }
+    40% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes greenRanger {
-  10%  {margin-bottom:150px;}
-  30%  {margin-bottom:0px;background-color: green;}
-  50% {margin-bottom:150px;}
+    10% {
+        margin-bottom: 150px;
+    }
+    30% {
+        margin-bottom: 0px;
+        background-color: green;
+    }
+    50% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Standard syntax */
 @keyframes greenRanger {
-  10%  {margin-bottom:150px;}
-  30%  {margin-bottom:0px;background-color: green;}
-  50% {margin-bottom:150px;}
+    10% {
+        margin-bottom: 150px;
+    }
+    30% {
+        margin-bottom: 0px;
+        background-color: green;
+    }
+    50% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes blueRanger {
-  30%  {margin-bottom:150px;}
-  50%  {margin-bottom:0px;background-color: blue;}
-  70% {margin-bottom:150px;}
+    30% {
+        margin-bottom: 150px;
+    }
+    50% {
+        margin-bottom: 0px;
+        background-color: blue;
+    }
+    70% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Standard syntax */
 @keyframes blueRanger {
-  30%  {margin-bottom:150px;}
-  50%  {margin-bottom:0px;background-color: blue;}
-  70% {margin-bottom:150px;}
+    30% {
+        margin-bottom: 150px;
+    }
+    50% {
+        margin-bottom: 0px;
+        background-color: blue;
+    }
+    70% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pinkRanger {
-  50%  {margin-bottom:150px;}
-  70%  {margin-bottom:0px;background-color: magenta;}
-  90% {margin-bottom:150px;}
+    50% {
+        margin-bottom: 150px;
+    }
+    70% {
+        margin-bottom: 0px;
+        background-color: magenta;
+    }
+    90% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Standard syntax */
 @keyframes pinkRanger {
-  50%  {margin-bottom:150px;}
-  70%  {margin-bottom:0px;background-color: magenta;}
-  90% {margin-bottom:150px;}
+    50% {
+        margin-bottom: 150px;
+    }
+    70% {
+        margin-bottom: 0px;
+        background-color: magenta;
+    }
+    90% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes blackRanger {
-  70%  {margin-bottom:150px;}
-  90%  {margin-bottom:0px;background-color: black;}
-  100% {margin-bottom:150px;}
+    70% {
+        margin-bottom: 150px;
+    }
+    90% {
+        margin-bottom: 0px;
+        background-color: black;
+    }
+    100% {
+        margin-bottom: 150px;
+    }
 }
 
 /* Standard syntax */
 @keyframes blackRanger {
-  70%  {margin-bottom:150px;}
-  90%  {margin-bottom:0px;background-color: black;}
-  100% {margin-bottom:150px;}
+    70% {
+        margin-bottom: 150px;
+    }
+    90% {
+        margin-bottom: 0px;
+        background-color: black;
+    }
+    100% {
+        margin-bottom: 150px;
+    }
 }
