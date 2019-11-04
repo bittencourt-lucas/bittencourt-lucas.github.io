@@ -1,4 +1,4 @@
-// This will trigger an animation featuring a transition
+// This is a display of how to add transition effects to CSS through JavaScript
 var transitionState = false
 var magicTransition = function() {
     // Standard Syntax
@@ -15,7 +15,6 @@ var magicTransition = function() {
         document.getElementById('magicTransition').style.paddingBottom = '75px'
         transitionState = true
     } else {
-        document.getElementById('magicTransition').style.height = '50px'
         document.getElementById('magicTransition').style.background = 'white'
         document.getElementById('magicTransition').style.color = 'white'
         document.getElementById('magicTransition').style.paddingTop = '0px'
@@ -24,25 +23,28 @@ var magicTransition = function() {
     }
 }
 
+// This will add animation effects to HTML elements using JavaScript through the CSS file
 var playAnimation = function() {
+    // Standard Syntax
     document.getElementById('circle1').style.animationName = 'redRanger'
     document.getElementById('circle1').style.animationDuration = '4s'
-    document.getElementById('circle1').style.webkitAnimationName = 'redRanger'
-    document.getElementById('circle1').style.webkitAnimationDuration = '4s'
     document.getElementById('circle2').style.animationName = 'greenRanger'
     document.getElementById('circle2').style.animationDuration = '4s'
-    document.getElementById('circle2').style.webkitAnimationName = 'greenRanger'
-    document.getElementById('circle2').style.webkitAnimationDuration = '4s'
     document.getElementById('circle3').style.animationName = 'blueRanger'
     document.getElementById('circle3').style.animationDuration = '4s'
-    document.getElementById('circle3').style.webkitAnimationName = 'blueRanger'
-    document.getElementById('circle3').style.webkitAnimationDuration = '4s'
     document.getElementById('circle4').style.animationName = 'pinkRanger'
     document.getElementById('circle4').style.animationDuration = '4s'
-    document.getElementById('circle4').style.webkitAnimationName = 'pinkRanger'
-    document.getElementById('circle4').style.webkitAnimationDuration = '4s'
     document.getElementById('circle5').style.animationName = 'blackRanger'
     document.getElementById('circle5').style.animationDuration = '4s'
+    // For Safari 3.1 to 6.0
+    document.getElementById('circle1').style.webkitAnimationName = 'redRanger'
+    document.getElementById('circle1').style.webkitAnimationDuration = '4s'
+    document.getElementById('circle2').style.webkitAnimationName = 'greenRanger'
+    document.getElementById('circle2').style.webkitAnimationDuration = '4s'
+    document.getElementById('circle3').style.webkitAnimationName = 'blueRanger'
+    document.getElementById('circle3').style.webkitAnimationDuration = '4s'
+    document.getElementById('circle4').style.webkitAnimationName = 'pinkRanger'
+    document.getElementById('circle4').style.webkitAnimationDuration = '4s'
     document.getElementById('circle5').style.webkitAnimationName = 'blackRanger'
     document.getElementById('circle5').style.webkitAnimationDuration = '4s'
 }
