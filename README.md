@@ -13,6 +13,10 @@ This week's class was taught by Purnell, in which he explained the basics of the
 
 This week's class was taught by Gavin, and he explained how JSON's parse and stringify work.
 
+### JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation
+
+This was the first topic explained at Week 4. The topic was explained by David, who showed us some good examples of how to create JavaScript classes and objects.
+
 ### Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript
 
 I am responsible for this week. I'll be teaching what is CSS3 and about it's compatibility,
