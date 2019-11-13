@@ -1,3 +1,8 @@
+/******************************************************************************
+* JavaScript Objects - Object Creation Functions, Inheritance, Properties,
+* Methods, Instantiation
+******************************************************************************/
+
 // There are multiple ways of creating a class and determining creating functions,
 // properties, methods, using inheritance and creating instances of a class
 
@@ -86,4 +91,23 @@ var testFunction = function() {
     // be called without the need to "instantiate" it
     console.log('OBJECT WITHOUT A CLASS')
     boss.fireball()
+}
+
+/******************************************************************************
+* Manipulating CSS Class Properties Using JavaScript
+******************************************************************************/
+
+// To manipulate CSS class properties using JavaScript it's not even necessary
+// to create a CSS stylesheet. This will be displayed by using a simple
+// dark/light theme toggle button.
+var darkMode = function() {
+    document.body.style.background = "black";
+    document.body.style.color = "white";
+    document.getElementById("warning").style.color = "red";
+}
+
+var lightMode = function() {
+    document.body.style.background = "white";
+    document.body.style.color = "black";
+    document.getElementById("warning").style.color = "blue";
 }
