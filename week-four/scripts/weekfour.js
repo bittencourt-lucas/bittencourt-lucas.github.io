@@ -101,13 +101,13 @@ var testFunction = function() {
 // to create a CSS stylesheet. This will be displayed by using a simple
 // dark/light theme toggle button.
 var darkMode = function() {
-    document.body.style.background = "black";
+    document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
     document.getElementById("warning").style.color = "red";
 }
 
 var lightMode = function() {
-    document.body.style.background = "white";
+    document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
     document.getElementById("warning").style.color = "blue";
 }
