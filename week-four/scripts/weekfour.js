@@ -104,10 +104,20 @@ var darkMode = function() {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
     document.getElementById("warning").style.color = "red";
+    // I can create a class in HTML, and when I get the elements from that class
+    // with JavaScript, an array will be created, and I can choose to either
+    // edit all elements from a class at the same time, or to access them
+    // individually.
+    var themeButton = document.getElementsByClassName("change theme");
+    themeButton[0].style.backgroundColor = "black";
+    themeButton[0].style.color = "white";
 }
 
 var lightMode = function() {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
     document.getElementById("warning").style.color = "blue";
+    var themeButton = document.getElementsByClassName("change theme");
+    themeButton[1].style.backgroundColor = "white";
+    themeButton[1].style.color = "black";
 }
