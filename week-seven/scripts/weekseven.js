@@ -23,7 +23,20 @@ var magicTransition = function() {
     }
 }
 
-// This will add animation effects to HTML elements using JavaScript through the CSS file
+// To demonstrate how transformation can get triggered (and even controlled) by
+// JavaScript, this function will increase rotation and scale every time the
+// button is clicked, until the text disappears the screen
+var rotation = 0;
+var scale = 0.2;
+var playTransformation = function() {
+    document.getElementById('transform-div').style.transform =
+        'rotate(' + rotation + 'deg) scale(' +  scale + ')';
+    rotation += 10;
+    scale += 0.01;
+}
+
+// This will add animation effects to HTML elements using JavaScript
+// through the CSS file
 var playAnimation = function() {
     // Standard Syntax
     document.getElementById('circle1').style.animationName = 'redRanger'
