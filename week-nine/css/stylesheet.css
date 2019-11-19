@@ -1,19 +1,14 @@
-.squares {
+.skewing {
   display: inline-block;
-  background-color: #0074d9;
+  background-color: blue;
   height: 100px;
   width: 100px;
-  font-size: 1px;
-  padding: 1px;
   color: white;
-  margin-right: 5px;
-  margin-left: 5px;
-  animation: roll 3s infinite;
+  animation: skew 3s infinite;
   transform: rotate(30deg);
-  opacity: .7;
 }
 
-@keyframes roll {
+@keyframes skew {
   0% {
     transform: skewY(0) skewX(0);
   }
@@ -22,16 +17,14 @@
   }
 }
 
-.element {
+.rotation {
   display: inline-block;
-  background-color: #0074d9;
   height: 100px;
   width: 100px;
   color: white;
   text-align: center;
   opacity: .7;
   font-family: Verdana, sans-serif;
-  border: 3px solid rgba(0,0,0,.3); 
   margin-bottom: 30px;
 }
 
@@ -39,20 +32,21 @@
   transform: rotateX(40deg);
   animation: one 2s infinite;
   animation-direction: alternate;
+  background-color: blue;
 }
 
 .two {
   transform: rotateY(40deg);
   animation: two 2s infinite;
   animation-direction: alternate;
-  background-color: #831a4a;
+  background-color: red;
 }
 
 .three {
   transform: rotateZ(100deg);
   animation: three 2s infinite;
   animation-direction: alternate;
-  background-color: #439772;
+  background-color: green;
 }
 
 @keyframes one {
