@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucas Bittencourt's CIT 261 Assignments</title>
+        <script src="scripts/weekfive.js"></script>
+    </head>
+    <body>
+        <h1>Week Five</h1>
+        <h2>
+            Using XMLHTTPRequest to Consume a JSON Web Service
+        </h2>
+        <p>
+            This will demonstrate how to get information from a JSON either
+            from a local file or an API by using an AJAX XMLHTTPRequest. The
+            information will be changed in the page by using HTML DOM, and
+            the request won't require a refresh on the page, because it works
+            asynchronously.
+        </p>
+        <li>
+            The data in this button will be retrieved from a local file on the
+            server-side.
+        </li>
+        <div id="message"></div>
+        <p><button onclick="loadDoc()">Click me</button></p>
+        <li>
+            The data in this button is being retrieved from Github's API.
+        </li>
+        <div id="users"></div>
+        <p><button onclick="getUsers()">Click me</button></p>
+        <p><a href="../index.html">Go back</a></p>
+    </body>
+</html>
