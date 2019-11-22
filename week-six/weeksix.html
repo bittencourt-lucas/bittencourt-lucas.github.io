@@ -28,6 +28,19 @@
         </li>
         <div id="message"></div>
         <p><button onclick="store()">Store</button></p>
-        <p><a href="../index.html">Store</a></p>
+        <h2>
+            DOM Manipulation Using createElement, appendChild, insertBefore,
+            removeChild, etc.
+        </h2>
+        <p>Click the button to create a P element with some text.</p>
+        <button id="change-button" onclick="addParagraph()">Add Paragraph</button>
+        <button onclick="removeParagraph()">STOP THIS MADNESS!</button>
+        <ul id="test-list">
+        </ul>
+        <button onclick="appendToHead()">Append To Head</button>
+        <button onclick="appendToTail()">Append To Tail</button>
+        <button onclick="popFromList()">Pop</button>
+        <button onclick="changeLast()">Edit</button>
+        <p id="footer"><a href="../index.html">Go back</a></p>
     </body>
 </html>

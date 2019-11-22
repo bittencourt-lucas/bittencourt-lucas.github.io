@@ -25,3 +25,44 @@ var retrieve = () => {
     document.getElementById("hello-message").innerHTML = "Hello Stranger";
   }
 }
+
+/*****************************************************************************
+ * Demonstrate fluency in DOM Manipulation Using createElement, appendChild,
+ * insertBefore, removeChild, etc.
+ *****************************************************************************/
+var addParagraph = () => {
+  var para = document.createElement("P");
+  para.innerText = "You can create as many paragraphs as you want!";
+  document.body.appendChild(para);  
+}
+
+var removeParagraph = () => {
+  var rep = document.getElementById("change-button");
+  document.body.removeChild(rep);
+}
+
+var appendToHead = () => {
+  var ul = document.getElementById("test-list");
+  var newElement = document.createElement("LI");
+  newElement.innerText = "Head";
+  ul.insertBefore(newElement, ul.childNodes[0]);
+}
+
+var appendToTail = () => {
+  var ul = document.getElementById("test-list");
+  var newElement = document.createElement("LI");
+  newElement.innerText = "Tail";
+  ul.appendChild(newElement);
+}
+
+var popFromList = () => {
+  var ul = document.getElementById("test-list");
+  var node = document.getElementById("test-list").lastChild;
+  ul.removeChild(node);
+}
+
+var changeLast = () => {
+  var node = document.getElementById("test-list").lastChild;
+  var newText = document.createTextNode("Edited");
+  node.replaceChild(newText, node.lastChild);
+}
