@@ -5,13 +5,13 @@
 var store = () => {
   if (typeof(Storage) !== undefined) {
     localStorage.setItem("user", "lbittencourt");
-    localStorage.setItem("data", {
+    localStorage.setItem("data", JSON.stringify({
       token: "1",
       roles: ["admin", "manager"]
-    })
-    localStorage.setItem("associative", {
+    }))
+    localStorage.setItem("associative", JSON.stringify({
       "usersOnline": 1,
-    })
+    }))
   } else {
     console.log("Your browser doesn't support Local Storage! :(")
   }
@@ -20,7 +20,10 @@ var store = () => {
 var retrieve = () => {
   if (localStorage.user !== undefined) {
     document.getElementById("hello-message").innerHTML = "Hello "
-      + localStorage.user;
+      + localStorage.user + ". Your token is " + JSON.parse(localStorage.data).token
+      + " and your roles are: " + JSON.parse(localStorage.data).roles[0] + " and "
+      + JSON.parse(localStorage.data).roles[1] + ". Currently, there is "
+      + JSON.parse(localStorage.associative)["usersOnline"] + " user online.";
   } else {
     document.getElementById("hello-message").innerHTML = "Hello Stranger";
   }
