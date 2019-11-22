@@ -5,24 +5,29 @@
         <script src="scripts/weeksix.js"></script>
     </head>
     <body>
-        <h1>Week Sixve</h1>
+        <h1>Week Six</h1>
         <h2>
             Local Storage API, Storing and Retrieving Simple Data, Arrays,
             Associative Arrays, and Objects
         </h2>
+        <h3 id="hello-message"></h3>
         <p>
             Local Storage
         </p>
         <li>
-            Store in Local Storage.
-        </li>
-        <div id="message"></div>
-        <p><button onclick="store()">Click me</button></p>
-        <li>
-            Retrieve from Local Storage.
+            If you try to Retrieve from the local storage before storing data
+            in it, you'll see "Hello Stranger". If you click the Store button,
+            the next time you Retrieve data it'll show something different!
         </li>
         <div id="users"></div>
-        <p><button onclick="retrieve()">Click me</button></p>
-        <p><a href="../index.html">Go back</a></p>
+        <p><button onclick="retrieve()">Retrieve</button></p>
+        <li>
+            When you click the Store button, data will be stored locally on
+            your computer, so the next time you enter this page, it'll
+            remember you.
+        </li>
+        <div id="message"></div>
+        <p><button onclick="store()">Store</button></p>
+        <p><a href="../index.html">Store</a></p>
     </body>
 </html>
