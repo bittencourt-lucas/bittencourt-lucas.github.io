@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Lucas Bittencourt's CIT 261 Assignments</title>
-        <script src="scripts/weeknine.js"></script>
+        <script src="scripts/weekeight.js"></script>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
     </head>
-    <body>
+    <body onload="welcomeMessage()">
         <h1>Week Eight</h1>
         <h2>
             Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library)
@@ -41,9 +41,18 @@
             Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events
         </h2>
         <p>
-            With HTML5 it is now possible to embed multimedia on a screen, such as
-            videos and audios. It is also possible to create an interactive canvas that
-            can be used for various purposes.
+            To use the features on this part, you'll need to simulate a Mobile Device, or access
+            this page on an actual Mobile Device.
+        </p>
+        <div ontouchstart="touchBox()" ontouchend="releaseBox()" id="mobilebox"></div>
+        <p>
+          The box above has an onTouchStart and an onTouchEnd event. So when the box is
+          being held with a finger, it'll start changing its color to blue, and when it's released,
+          it'll change back to red.
+        </p>
+        <p>
+          As you probably noticed already, the page also has an onLoad event attached to the body
+          of the page, so it'll display whenever the page is reloaded.
         </p>
         <p><a href="../index.html">Go back</a></p>
     </body>

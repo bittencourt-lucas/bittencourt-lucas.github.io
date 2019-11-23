@@ -81,3 +81,10 @@
   transition-duration: 2s;
   transition-timing-function: linear;
 }
+
+#mobilebox {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin-top: 20px;
+}
