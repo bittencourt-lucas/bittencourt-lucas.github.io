@@ -3,14 +3,12 @@ console.log('Client side JS is loaded')
 const getWeather = () => {
   var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/aefe3d980fec4447cc130acb2827083c/-7.118669,-34.848297", true);
-  xhttp.withCredentials = true
   xhttp.onreadystatechange = function() {
       if (xhttp.readyState === 4 && xhttp.status === 200) {
           var obj = JSON.parse(xhttp.responseText);
           console.log(obj)
       }
   };
-  xhttp.setRequestHeader('Content-Type', 'application/json');
   xhttp.send();
 }
 
