@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lucas Bittencourt's CIT 261 Assignments</title>
+        <title>Lucas Bittencourt's CIT 261 Final Project</title>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
         <script src="scripts/finalproject.js"></script>
     </head>
     <body>  
-      <div class="main-content">
-          <header>
+    <div class="main-content">
+        <header>
             <h1>Weather Forecast</h1>
             <a href="./finalproject.html">Weather</a>
             <a href="./about.html">About</a>
-            <a href="./help.html">Help</a>
-          </header>
-          <p>Use this page to get your weather</p>
-          <input placeholder="Location">
-          <button onclick="wrapper()">Search</button>
-          <p id="message-1">
-  
-          </p>
-          <p id="message-2">
-  
-          </p>
-      </div>   
-      <footer>Created by Lucas Bittencourt</footer>
-      <p><a href="../index.html">Go back</a></p>
+        </header>
+        <p>Enter the place you want to look up and click the Search button.</p>
+        <input id="location" placeholder="Location">
+        <button id="search-button" onclick="wrapper()">Search</button>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+        <div id="loading"></div>
+    </div>
+    <footer>Created by Lucas Bittencourt</footer>
+    <p><a href="../index.html">Go back</a></p>
     </body>
 </html>
