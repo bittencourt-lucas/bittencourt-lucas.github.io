@@ -52,8 +52,9 @@ header a:hover {
 }
 
 .aboutme {
-  -webkit-animation: 2s showaboutme;
-  animation: 2s showaboutme;
+  white-space: nowrap;
+  -webkit-animation: 2.5s showaboutme;
+  animation: 2.5s showaboutme;
 }
 
 @keyframes showaboutme {
