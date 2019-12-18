@@ -38,8 +38,31 @@ header a {
   text-decoration: none;
 }
 
-.portrait {
+header a:hover {
+  color: #FFFFFF;
+  background-color: #888888;
+  -webkit-transition: color 2s, background-color 2s ease-out;
+  transition: color 2s, background-color 2s ease-out
+}
+
+#portrait {
   width: 250px;
+  -webkit-animation: 2s showaboutme;
+  animation: 2s showaboutme;
+}
+
+.aboutme {
+  -webkit-animation: 2s showaboutme;
+  animation: 2s showaboutme;
+}
+
+@keyframes showaboutme {
+  0% {
+    padding-left: 600px;
+  }
+  100% {
+    padding-left: 0px;
+  }
 }
 
 input {
