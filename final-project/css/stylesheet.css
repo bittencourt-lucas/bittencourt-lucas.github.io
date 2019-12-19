@@ -51,23 +51,6 @@ header a:hover {
 
 #portrait {
   width: 250px;
-  -webkit-animation: 2s showaboutme;
-  animation: 2s showaboutme;
-}
-
-.aboutme {
-  white-space: nowrap;
-  -webkit-animation: 2.5s showaboutme;
-  animation: 2.5s showaboutme;
-}
-
-@keyframes showaboutme {
-  0% {
-    padding-left: 600px;
-  }
-  100% {
-    padding-left: 0px;
-  }
 }
 
 input {
@@ -94,6 +77,11 @@ button {
   display: inline-block;
   width: 60px;
   height: 60px;
+}
+@media (max-width: 600px) {
+  #loading {
+    margin: 0 auto;
+  }
 }
 
 @keyframes loading-animation {

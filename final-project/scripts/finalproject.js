@@ -1,9 +1,5 @@
 function loading() {
     document.getElementById('loading').style.content = ' ';
-    document.getElementById('loading').style.display = 'block';
-    document.getElementById('loading').style.width = '50px';
-    document.getElementById('loading').style.height = '50px';
-    document.getElementById('loading').style.margin = '8px';
     document.getElementById('loading').style.borderRadius = '50%';
     document.getElementById('loading').style.border = '3px solid #888888';
     document.getElementById('loading').style.borderColor = '#888888 transparent';
@@ -13,10 +9,6 @@ function loading() {
 
 function loadingFinished() {
     document.getElementById('loading').style.content = ' ';
-    document.getElementById('loading').style.display = 'block';
-    document.getElementById('loading').style.width = '50px';
-    document.getElementById('loading').style.height = '50px';
-    document.getElementById('loading').style.margin = '8px';
     document.getElementById('loading').style.borderRadius = '';
     document.getElementById('loading').style.border = '';
     document.getElementById('loading').style.borderColor = '';
