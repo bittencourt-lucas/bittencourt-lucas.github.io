@@ -4,10 +4,14 @@ body {
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+@media (max-width: 600px) {
+  body {
+    text-align: center;
+  }
 }
 
 .main-content {
@@ -69,6 +73,13 @@ header a:hover {
 input {
   border: 1px solid #cccccc;
   padding: 8px;
+}
+@media (max-width: 600px) {
+    input {
+    width: 50%;
+    float: none;
+    text-align: center;
+  }
 }
 
 button {
